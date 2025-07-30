@@ -1,0 +1,480 @@
+
+.profile {
+  min-height: 100vh;
+  background-color: #0D0B21;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.profile-header {
+  background-color: #0D0B21;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.back-button,
+.settings-button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.profile-header::after {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 100%;
+  background: #3A3A5A;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.profile-header::before {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 90%;
+  background: #6B4EFF;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.profile-content {
+  flex: 1;
+  padding: 24px 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.contact-info,
+.about-me,
+.experience,
+.education {
+  background: #1E1B39;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+ .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.section-title h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section-icon {
+  color: #A5A5A5; 
+  font-size: 18px; 
+}
+.edit-button {
+  background: none;  
+  border: none;       
+  padding: 0;        
+  color: #6B4EFF;     
+  cursor: pointer;
+  font-size: 16px;   
+  display: flex;      
+  align-items: center;
+  justify-content: center;
+}
+/* Contact info */
+.info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.info-item p {
+  margin: 0;
+  color: #A5A5A5;
+}
+
+
+.about-content {
+  color: #A5A5A5;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.experience-item,
+.education-item {
+  background: #1E1B39;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.item-header h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.delete-button ,.edit-button1{
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+}
+
+.experience-item p,
+.education-item p {
+  margin: 4px 0 0 0;
+  color: #A5A5A5;
+  font-size: 13px;
+}
+
+
+.edit-form,
+.add-form {
+  background: #1E1B39;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.add-form input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.save-button,
+.add-form button {
+  background: #6B4EFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+}
+
+
+.bottom-nav {
+  background: #1E1B39;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: #A5A5A5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.nav-item.active {
+  color: #6B4EFF;
+}
+
+
+
+
+.experience-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.experience-edit-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-edit-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.experience-edit-form label {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.experience-edit-form .form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.experience-edit-form .save-button,
+.experience-edit-form .cancel-button {
+  padding: 6px 12px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.experience-edit-form .cancel-button {
+  background: #ccc;
+  color: #000;
+}
+.experience-card {
+  background-color: #2d2c54;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  width: fit-content;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 8px 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-buttons button {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.action-buttons button:hover {
+  color: #fff;
+}
+
+.date {
+  color: #ccc;
+  font-style: italic;
+  margin-top: 4px;
+}
+.edit-button1 {
+  background: none;  
+  border: none;       
+  padding: 0;         
+  color: #6B4EFF;     
+  cursor: pointer;
+  font-size: 16px;    
+  display:flex;     
+  align-items: center;
+  justify-content: center;
+  ;
+}
+
+/* Education1 */
+.education-edit-form {
+  background-color: #251d47;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #cfcfff;
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  padding: 8px 12px;
+  border: 1px solid #7f8bff;
+  border-radius: 6px;
+  background-color: #1a1536;
+  color: white;
+  font-size: 14px;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.save-button {
+  background-color: #7f8bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: #ccc;
+  border: 1px solid #555;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button {
+  background: none;
+  border: none;
+  color: #6B4EFF;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.experience-card {
+  background: #2c234d;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 14px;
+  color: #e1e1e1;
+}
+
+.experience-card-inner {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.experience-logo {
+  width: 48px;
+  height: 48px;
+  background: #8d78e6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-title-row h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #c2b9ff;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: #c2b9ff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+ .experience-card {
+  background: #2c234d;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 14px;
+  color: #e1e1e1;
+  width: 100%; 
+  box-sizing: border-box;
+}
